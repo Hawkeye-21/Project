@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,46 +10,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> 
-   <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./wow/animate.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container header__container">
-            <div class="logo">
-                <div>
-                    <img src="./img/logo.svg" alt="logo">
+            <div class="header__logo">
+                <div class="header__logo-img">
+                    <img src="./img/logo.svg" alt="logo-header">
                 </div>
-                <div>
-                    <p class="logo__bold">
+                <div class="header__logo-info">
+                    <p class="header-logo__bold">
                         Foundation
                     </p>
-                    <p class="logo__regular">
+                    <p class="header-logo__regular">
                         Startup landing template
                     </p>
                 </div>
             </div>
             <nav class="header-nav">
-                <ul>
-                    <li class="header-li">
-                        <a href="#">
-                            Home
-                        </a>
-                    </li>
-                    <li class="header-li">
-                        <a href="#">
-                            Stories
-                        </a>
-                    </li>
-                </ul>
-                <div>
-                   <button class="button">
-                        Get Started
-                    </button> 
+
+                <input class="checkbox" checked type="checkbox">
+                <div class="check-wrapper">
+                    <div class="check"></div>
+                    <div class="check"></div>
+                    <div class="check"></div>
                 </div>
+                <div class="menu-all">
+
+                    <ul class="header-ul">
+                        <li class="header-li">
+                            <a class="header-li__text" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header-li">
+                            <a class="header-li__text" href="#">
+                                Stories
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button class="button">
+                            Get Started
+                        </button>
+                    </div>
+
+                </div>
+
             </nav>
         </div>
     </header>
+    <section class="header">
+        <div class="container header-wrapper">
+            <div>
+                <h1 class="title">
+                    Build stunning websites & apps.
+                </h1>
+                <p class="header-text">
+                    Creative live segments and target the right people for messages based on their behaviors.
+                </p>
+                <div class="button-container">
+                    <button class="button">
+                        Get started
+                    </button>
+                    <button class="button button-white">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div>
+                <img class="image-poster" src="./img/goya.png" alt="">
+            </div>
+        </div>
+    </section>
     <section class="about__site">
         <div class="container container__about">
             <div class="info__about">
@@ -64,54 +102,149 @@
                     Who is it for?
                 </p>
                 <p class="info__p2">
-                Startups, small companies and teams, entrepreneurs and web developers.
+                    Startups, small companies and teams, entrepreneurs and web developers.
                 </p>
             </div>
-        </div> 
+        </div>
     </section>
     <section class="company">
         <div class="container">
             <ul class="list__company">
-               <li class="pic">
-                    <a class="label" href="https://www.nytimes.com/" aria-label="Ссылка на The New York Times">
-                        <img src="./img/Bitmap1.svg" alt="Bitmap1">
+                <li class="list__company-pic">
+                    <a class="list__company-label" href="https://www.nytimes.com/" aria-label="Ссылка на The New York Times">
+                        <img class="list__company-img" src="./img/Bitmap1.svg" alt="Bitmap1">
                     </a>
                 </li>
                 <li>
-                    <a class="label" href="https://forbes.ua/news" aria-label="Ссылка на Forbes">
-                        <img src="./img/Bitmap2.svg" alt="Bitmap2">
+                    <a class="list__company-label" href="https://forbes.ua/news" aria-label="Ссылка на Forbes">
+                        <img class="list__company-img" src="./img/Bitmap2.svg" alt="Bitmap2">
                     </a>
                 </li>
                 <li>
-                    <a class="label" href="https://www.apple.com/ua/" aria-label="Ссылка на Apple">
-                        <img src="./img/Bitmap3.svg" alt="Bitmap3">
+                    <a class="list__company-label" href="https://www.apple.com/ua/" aria-label="Ссылка на Apple">
+                        <img class="list__company-img" src="./img/Bitmap3.svg" alt="Bitmap3">
                     </a>
                 </li>
                 <li>
-                    <a class="label" href="https://mashable.com/" aria-label="Ссылка на Mashable">
-                        <img src="./img/Bitmap4.svg" alt="Bitmap4">
+                    <a class="list__company-label" href="https://mashable.com/" aria-label="Ссылка на Mashable">
+                        <img class="list__company-img" src="./img/Bitmap4.svg" alt="Bitmap4">
                     </a>
                 </li>
                 <li>
-                    <a class="label" href="https://www.wsj.com/" aria-label="Ссылка на WSJ">
-                        <img src="./img/Bitmap5.svg" alt="Bitmap5">
+                    <a class="list__company-label" href="https://www.wsj.com/" aria-label="Ссылка на WSJ">
+                        <img class="list__company-img" src="./img/Bitmap5.svg" alt="Bitmap5">
                     </a>
                 </li>
                 <li>
-                    <a class="label" href="https://www.google.com.ua/?hl=ru" aria-label="Ссылка на Google">
-                        <img src="./img/Bitmap6.svg" alt="Bitmap6">
+                    <a class="list__company-label" href="https://www.google.com.ua/?hl=ru" aria-label="Ссылка на Google">
+                        <img class="list__company-img" src="./img/Bitmap6.svg" alt="Bitmap6">
                     </a>
                 </li>
             </ul>
-            
-            
         </div>
     </section>
-
+    <section class="manage">
+        <div class="container  manage-flex">
+            <div class="manage-flex__pic">
+                <img class="manage-flex__pic-img" src="./img/manage.png" alt="window wiht fox">
+            </div>
+            <div class="manage-flex__content">
+                <p class="manage-title">
+                    Team Inbox
+                </p>
+                <h3 class="manage-text wow backInDoWn">
+                    Manage conversations
+                </h3>
+                <p class="manage-info">
+                    One place to manage and respond to all conversations with leads and users. Receive messages from leads.
+                </p>
+                <div class="manage-flex__quote">
+                    <div class="profile-quote">
+                        <p class="profile-quote__post">
+                            “Great widgets. Great selection. Great design and <span>easy to implement</span>. Definitely a huge time saver for a web developer!”
+                        </p>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-info__picture">
+                            <img class="profile-info__picture-img" src="./img/Profile.svg" alt="">
+                        </div>
+                        <div class="profile-info__developer">
+                            <p class="profile-info__developer-name">
+                                Viella Malkovich
+                            </p>
+                            <p class="profile-info__developer-function">
+                                Creative Director at Johnson
+                            </p>
+                        </div> 
+                        
+                    </div>
+               </div>    
+            </div>
+        </div>
+    </section>
+    <section class="busy">
+        <div class="container busy-flex">
+            <div class="busy-block">
+                <p class="text-mini text-mini__blue">
+                    Communicate Better
+                </p>
+                <h3 class="title-inner">
+                    Built for busy small teams
+                </h3>
+                <p class="text-inner">
+                    Three products that can be used independently or combined together for your company’s needs.
+                </p>
+                <div class="busy-button">
+                    <button class="button">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            <div class="busy-picture">
+                <img class="busy-picture__animation" src="./img/ouch.png" alt="Mobile">
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container info-flex">
+            <div>
+                <p class="info-p">
+                    <span>Subscriptions.</span> Foundation works with the tools and services you already use every day.
+                </p>
+                <div>
+                    <a class="info-link" href="">
+                        Learn more about subscriptions
+                    </a>
+                </div>
+            </div>
+            <div>
+                <p class="info-p">
+                    <span>Felxible Hours.</span> Get started with our simple snippet of JavaScript or easy to install
+                    SDKs for iOS and Android.
+                </p>
+                <div>
+                    <a class="info-link" href="">
+                        Get more info about hours
+                    </a>
+                </div>
+            </div>
+            <div>
+                <p class="info-p">
+                    <span>Fast Communication.</span> We offer measures like 2FA and SSO to ensure the safety of your
+                    data.
+                </p>
+                <div>
+                    <a class="info-link" href="">
+                        Communication guidelines
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="audience">
         <div class="container">
             <div class="audience__text-part">
-                    <p class="audience__entry">
+                <p class="audience__entry">
                     Engage Visitors
                 </p>
                 <h2 class="audience__title">
@@ -128,69 +261,202 @@
                         Learn More
                     </button>
                 </div>
-            <ul class="categories">
-                <li class="categories__ouch">
-                    <img src="./img/ouch1.png" alt="Developers" >
+                <ul class="categories">
+                    <li class="categories__ouch">
+                        <img class="categories__img" src="./img/ouch1.png" alt="Developers">
                         <p class="categories__text">
-                             Developers
+                            Developers
                         </p>
-                </li>
-                <li class="categories__ouch">
-                    <img src="./img/ouch2.png" alt="Entertainment">
-                    <p class="categories__text">
-                        Entertainment
-                    </p>
-                </li>
-                <li class="categories__ouch">
-                    <img src="./img/ouch3.png" alt="Athletes">
-                    <p class="categories__text">
-                        Athletes
-                    </p>
-                </li>
-                <li class="categories__ouch">
-                    <img src="./img/ouch4.png" alt="Creators">
-                    <p class="categories__text">
-                        Creators
-                    </p>
-                </li>
-            </ul>    
-            </div>         
-
-            
+                    </li>
+                    <li class="categories__ouch">
+                        <img class="categories__img" src="./img/ouch2.png" alt="Entertainment">
+                        <p class="categories__text">
+                            Entertainment
+                        </p>
+                    </li>
+                    <li class="categories__ouch">
+                        <img class="categories__img" src="./img/ouch3.png" alt="Athletes">
+                        <p class="categories__text">
+                            Athletes
+                        </p>
+                    </li>
+                    <li class="categories__ouch">
+                        <img class="categories__img" src="./img/ouch4.png" alt="Creators">
+                        <p class="categories__text">
+                            Creators
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
-
-
     <section class="gallery">
         <div class="container">
             <h2 class="gallery__title">All Surfaces Covered</h2>
             <p class="gallery__link">IOON kills bacteria on your hands, food, tables, laptops, you name it</p>
             <ul class="gallery__foto">
-                <li class="foto_1">
-                    <img src="./img/Rectangle 24.png" alt="" >
+                <li class="gallery__foto-foto_1">
+                    <img class="gallery__foto-img" src="./img/Rectangle 24.png" alt="">
                 </li>
-                <li class="foto_2">
-                    <img src="./img/Rectangle 23.png" alt="">
+                <li class="gallery__foto-foto_2">
+                    <img class="gallery__foto-img" src="./img/Rectangle 23.png" alt="">
                 </li>
-                <li class="foto_3">
-                    <img src="./img/brock-wegner-TgqTlVQ5gPM-unsplash 1.png" alt="">
+                <li class="gallery__foto-foto_3">
+                    <img class="gallery__foto-img" src="./img/brock-wegner-TgqTlVQ5gPM-unsplash 1.png" alt="">
                 </li>
-                <li class="foto_4">
-                    <img src="./img/Rectangle 13.png" alt="">
+                <li class="gallery__foto-foto_4">
+                    <img class="gallery__foto-img" src="./img/Rectangle 13.png" alt="">
                 </li>
-                <li class="foto_5">
-                    <img src="./img/Rectangle 19.png" alt="">
+                <li class="gallery__foto-foto_5">
+                    <img class="gallery__foto-img" src="./img/Rectangle 19.png" alt="">
                 </li>
-                <li class="foto_6">
-                    <img src="./img/Rectangle 21.png" alt="">
+                <li class="gallery__foto-foto_6">
+                    <img class="gallery__foto-img" src="./img/Rectangle 21.png" alt="">
                 </li>
-                <li class="foto_7">
-                    <img src="./img/Rectangle 20.png" alt="">
+                <li class="gallery__foto-foto_7">
+                    <img class="gallery__foto-img" src="./img/Rectangle 20.png" alt="">
                 </li>
             </ul>
         </div>
     </section>
-
+    <section class="bg-grey">
+        <div class="container free-flex">
+            <div class="free-flex__img">
+                <img class="animation-img" src="./img/s6.png" alt="window wiht fox">
+            </div>
+            <div class="free-flex__info">
+                <h4 class="free-title">
+                    Start your free trial.
+                </h4>
+                <p class="free-text">
+                    Get notified about company updates, news and blog posts. We hate spam.
+                </p>
+                <form class="free-form" action="">
+                    <input placeholder="Enter your email" class="free-input" required type="text">
+                    <button class="button">
+                        Get started
+                    </button>
+                </form>
+                <p class="free-text__after">
+                    Free 14-day trial · Easy setup · Cancel any time. Check out <a href="#"> Terms of Use</a>.
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__section-1">
+                <div class="footer__logo">
+                    <div class="footer__logo-img">
+                        <img src="./img/footer.svg" alt="logo-footer">
+                    </div>
+                    <div class="footer__logo-info">
+                        <p class="footer-logo__bold">
+                            Foundation
+                        </p>
+                        <p class="footer-logo__regular">
+                            Startup landing template
+                        </p>
+                    </div>
+                </div>
+                <p class="footer-template">
+                    Foundation is a website template for startups and small teams. It helps to build a website in no time.
+                </p>
+                <div class="footer__apps">
+                    <a class="footer__apps-href1" href="#">
+                        <img class="footer__apps-img1" src="./img/AppStore.svg" alt="AppStore">
+                    </a>
+                    <a class="footer__apps-href2" href="#">
+                        <img class="footer__apps-img2" src="./img/GooglePlay.svg" alt="GooglePlay">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__section-2">
+                <h5 class="footer__section-title">
+                    Product
+                </h5>
+                <ul class="footer__section-list">
+                    <li class="footer-list">
+                        <a class="footer-list__href" href="#">
+                            Acquire Users
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list__href" href="#">
+                            Content Marketing
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list__href" href="#">
+                            Website Templates
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list__href" href="#">
+                            Customer Management
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list__href" href="#">
+                            Virtual Inbox
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__section-3">
+                <h5 class="footer__section-title">
+                    Company
+                </h5>
+                <ul class="footer__section-list">
+                    <li class="footer-list">
+                        <a class="footer-list__href" href="#">
+                            About Foundation
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list__href" href="#">
+                            Brand Guidelines
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list__href"href="#">
+                            Press Kit
+                        </a>
+                    </li>
+                    <li class="footer-list">
+                        <a class="footer-list__href" href="#">
+                            Support
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="container footer__container">
+            <div class="footer__section-4">
+                <a class="footer__section-document" href="#">
+                    Terms
+                </a>   
+                <a class="footer__section-document" href="#">
+                    Privacy
+                </a>
+                <a class="footer__section-document" href="#">
+                    License
+                </a>
+            </div>
+            <div class="footer__section-5">
+                <a class="footer__section-network" href="#">
+                    <img src="./img/icon-twitter.svg" alt="">
+                </a>
+                <a class="footer__section-network" href="#">
+                    <img src="./img/icon-fb.svg" alt="">
+                </a>
+                <a class="footer__section-network" href="#">
+                    <img src="./img/LinkedIn.svg" alt="">
+                </a>
+            </div>
+        </div>  
+    </footer>
     <!-- <header class="container header">
         
             <div> 
@@ -257,5 +523,12 @@
             </div>
         </div>
     </section> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="./wow/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
 </body>
+
 </html>
