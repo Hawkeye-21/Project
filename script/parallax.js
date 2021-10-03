@@ -1,0 +1,1 @@
+$('.busy').parallax({imageSrc: './img/bigFoto.png'});
